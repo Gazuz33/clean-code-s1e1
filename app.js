@@ -33,7 +33,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className="tasks__task tasks__task_label";
+    label.className='tasks__task tasks__task_label';
 
     //Each elements, needs appending
     listItem.className="tasks__item";
@@ -159,8 +159,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("tasks__btn_action_edit");
-    var deleteButton=taskListItem.querySelector("tasks__btn_action_delete");
+    var editButton=taskListItem.querySelector("button.tasks__btn_action_edit");
+    var deleteButton=taskListItem.querySelector("button.tasks__btn_action_delete");
 
 
     //Bind editTask to edit button.
@@ -195,4 +195,4 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 //prevent creation of empty tasks.
 
-//Change edit to save when you are in edit-mode.
+//Change edit to save when you are in edit mode.
